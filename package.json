@@ -18,6 +18,13 @@
     "gatsby-plugin-sass": "^4.10.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-icons": "^4.7.1",
     "sass": "^1.35.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "gatsby-plugin-postcss": "^6.7.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
   }
 }

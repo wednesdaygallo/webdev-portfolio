@@ -1,10 +1,17 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "Portfolio Wednesday Gallo",
+    siteUrl: "http://www.wednesdaygallo.com",
+    title: "Wednesday Gallo",
+    description: 'Web Development Portfolio'
   },
   plugins: [
     "gatsby-plugin-sass",
-    'gatsby-plugin-postcss'
+    'gatsby-plugin-postcss',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+      icon: 'src/images/icon.png',
+      },
+    },
   ],
 };

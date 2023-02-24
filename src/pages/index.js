@@ -21,6 +21,7 @@ import {SiGmail} from 'react-icons/si';
 export default function index() {
   return (
     <div className='bg-black text-white'>
+
       <main>
           <section className="min-h-screen">
             {/* Navigation */}
@@ -44,15 +45,6 @@ export default function index() {
             <div className='bg-gradient-to-b from-pink-600 rounded-full w-80 h-80 mt-20 mx-auto mb-10'>
             </div>
           </section>
-
-        {/* <section className='featured' id="featured">
-          <div className="words">
-            <h3 className="subtitle">Featured Project</h3>
-            <h2>Playlist Wizard</h2>
-            <p>This React app works with the Spotify API to allow the user to quickly and easily search for songs and create a new playlist from their selections.</p>
-          </div>
-          <a href="https://playlist-wizard.herokuapp.com/"><img src={featuredApp} alt='app example screenshot'></img></a>
-        </section> */}
 
           {/* Skills Section  */}
           <section className='px-10 md:px-20 lg:px-40 xl:px-64 2xl:px-80'>
@@ -93,7 +85,7 @@ export default function index() {
                 <figcaption className='text-pink-500 text-center uppercase mb-2 text-xs'>React, Api connected</figcaption>
                 <img src={pokedex} alt='pokedex app screenshot' className='rounded-sm' />
                 <div className='text-sm flex justify-center gap-5 mt-2'>
-                  <a className='bg-gray-600 px-2 py-0.5 rounded-md hover:bg-teal-600' href='#'>Demo</a>
+                  <a className='bg-gray-600 px-2 py-0.5 rounded-md hover:bg-teal-600' href='http://wednesdaygallo.com/pokedex/'>Demo</a>
                   <a className='bg-gray-600 px-2 py-0.5 rounded-md hover:bg-teal-600' href='https://github.com/wednesdaygallo/pokedex'>Github</a>
                 </div>
               </figure>
@@ -102,7 +94,7 @@ export default function index() {
                 <figcaption className='text-pink-500 text-center uppercase mb-2 text-xs'>React, Socket.io</figcaption>
                 <img src={chat} alt='chat app screenshot' className='rounded-sm' />
                 <div className='text-sm flex justify-center gap-5 mt-2'>
-                  <a className='bg-gray-600 px-2 py-0.5 rounded-md hover:bg-teal-600' href='#'>Demo</a>
+                  <a className='bg-gray-600 px-2 py-0.5 rounded-md hover:bg-teal-600' href='http://wednesdaygallo.com/chat-app/'>Demo</a>
                   <a className='bg-gray-600 px-2 py-0.5 rounded-md hover:bg-teal-600' href='https://github.com/wednesdaygallo/chat-app'>Github</a>
                 </div>
               </figure>
@@ -111,7 +103,7 @@ export default function index() {
                 <figcaption className='text-pink-500 text-center uppercase mb-2 text-xs'>React</figcaption>
                 <img src={todo} alt='todo app screenshot' className='rounded-sm' />
                 <div className='text-sm flex justify-center gap-5 mt-2'>
-                  <a className='bg-gray-600 px-2 py-0.5 rounded-md hover:bg-teal-600' href='#'>Demo</a>
+                  <a className='bg-gray-600 px-2 py-0.5 rounded-md hover:bg-teal-600' href='http://wednesdaygallo.com/todo/'>Demo</a>
                   <a className='bg-gray-600 px-2 py-0.5 rounded-md hover:bg-teal-600' href='https://github.com/wednesdaygallo/todo-app'>Github</a>
                 </div>
               </figure>
@@ -120,7 +112,7 @@ export default function index() {
                 <figcaption className='text-pink-500 text-center uppercase mb-2 text-xs'>html/css</figcaption>
                 <img src={clone} alt='website screenshot' className='rounded-sm' />
                 <div className='text-sm flex justify-center gap-5 mt-2'>
-                  <a className='bg-gray-600 px-2 py-0.5 rounded-md hover:bg-teal-600' href='#'>Demo</a>
+                  <a className='bg-gray-600 px-2 py-0.5 rounded-md hover:bg-teal-600' href='http://wednesdaygallo.com/clone-site/'>Demo</a>
                   <a className='bg-gray-600 px-2 py-0.5 rounded-md hover:bg-teal-600' href='https://github.com/wednesdaygallo/clone-site'>Github</a>
                 </div>
               </figure>

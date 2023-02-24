@@ -1,15 +1,13 @@
 import React from 'react'
-// import './index.scss';
+import { Helmet } from 'react-helmet';
 import './global.css'
 
-import arrow from '../assets/arrow.svg';
-import wlogo from '../assets/wlogo.png';
-import featuredApp from '../images/featured-app.png';
+//import images
 import pokedex from '../images/pokedex.png';
 import todo from '../images/todo-app.png';
 import chat from '../images/react-chat-app.png';
 import clone from '../images/clone-site.png';
-
+import portrait from '../images/me1.png'
 import react from '../assets/reactjs-icon.svg';
 import webdev from '../assets/webdev.svg';
 import eye from '../assets/eye.svg';
@@ -21,6 +19,9 @@ import {SiGmail} from 'react-icons/si';
 export default function index() {
   return (
     <div className='bg-black text-white'>
+      <Helmet>
+        <title>Wednesday Gallo Portfolio</title>
+      </Helmet>
 
       <main>
           <section className="min-h-screen">
@@ -38,11 +39,12 @@ export default function index() {
           {/* Hero Section */}
           <div className='text-center p-10 bg-gradient-to-b from-black to-gray-900'>
               <h2 className='text-5xl py-2 font-medium tracking-widest font-poppins md:text-6xl lg:text-7xl'>Welcome.</h2>
-              <h3 className='text-xl py-2 tracking-tight text-teal-400 md:text-2xl'>My name is Wednesday Gallo</h3>
+              <h3 className='text-xl py-2 tracking-tight text-pink-500 md:text-2xl'>My name is Wednesday Gallo</h3>
               <p className='text-md py-5 leading-8 text-gray-300 max-w-lg md:mx-auto lg:text-lg'>I am a fullstack developer who is passionate about making the web beautiful and functional. Taking these amazing tools we have and creating a beautiful internet.</p>
             </div>
             {/* Profile Photo */}
-            <div className='bg-gradient-to-b from-pink-600 rounded-full w-80 h-80 mt-20 mx-auto mb-10'>
+            <div className='rounded-full w-80 h-80 mt-20 mx-auto mb-10 overflow-hidden'>
+              <img src={portrait} className='bg-cover' />
             </div>
           </section>
 
@@ -83,37 +85,37 @@ export default function index() {
               <figure className='mb-10'>
                 <h3 className='text-2xl text-center'>Pokédex</h3>
                 <figcaption className='text-pink-500 text-center uppercase mb-2 text-xs'>React, Api connected</figcaption>
-                <img src={pokedex} alt='pokedex app screenshot' className='rounded-sm' />
+                <a href='http://wednesdaygallo.com/pokedex/'><img src={pokedex} alt='pokedex app screenshot' className='rounded-sm' /></a>
                 <div className='text-sm flex justify-center gap-5 mt-2'>
-                  <a className='bg-gray-600 px-2 py-0.5 rounded-md hover:bg-teal-600' href='http://wednesdaygallo.com/pokedex/'>Demo</a>
-                  <a className='bg-gray-600 px-2 py-0.5 rounded-md hover:bg-teal-600' href='https://github.com/wednesdaygallo/pokedex'>Github</a>
+                  <a className='hover:text-teal-500' href='http://wednesdaygallo.com/pokedex/'>Demo</a>
+                  <a className='hover:text-teal-500' href='https://github.com/wednesdaygallo/pokedex'>Github</a>
                 </div>
               </figure>
               <figure className='mb-10'>
                 <h3 className='text-2xl text-center'>Real-time Chat</h3>
                 <figcaption className='text-pink-500 text-center uppercase mb-2 text-xs'>React, Socket.io</figcaption>
-                <img src={chat} alt='chat app screenshot' className='rounded-sm' />
+                <a href='http://wednesdaygallo.com/chat-app/'><img src={chat} alt='chat app screenshot' className='rounded-sm' /></a>
                 <div className='text-sm flex justify-center gap-5 mt-2'>
-                  <a className='bg-gray-600 px-2 py-0.5 rounded-md hover:bg-teal-600' href='http://wednesdaygallo.com/chat-app/'>Demo</a>
-                  <a className='bg-gray-600 px-2 py-0.5 rounded-md hover:bg-teal-600' href='https://github.com/wednesdaygallo/chat-app'>Github</a>
+                  <a className='hover:text-teal-500' href='http://wednesdaygallo.com/chat-app/'>Demo</a>
+                  <a className='hover:text-teal-500' href='https://github.com/wednesdaygallo/chat-app'>Github</a>
                 </div>
               </figure>
               <figure className='mb-10'>
                 <h3 className='text-2xl text-center'>Todo List</h3>
                 <figcaption className='text-pink-500 text-center uppercase mb-2 text-xs'>React</figcaption>
-                <img src={todo} alt='todo app screenshot' className='rounded-sm' />
+                <a href='http://wednesdaygallo.com/todo/'><img src={todo} alt='todo app screenshot' className='rounded-sm' /></a>
                 <div className='text-sm flex justify-center gap-5 mt-2'>
-                  <a className='bg-gray-600 px-2 py-0.5 rounded-md hover:bg-teal-600' href='http://wednesdaygallo.com/todo/'>Demo</a>
-                  <a className='bg-gray-600 px-2 py-0.5 rounded-md hover:bg-teal-600' href='https://github.com/wednesdaygallo/todo-app'>Github</a>
+                  <a className='hover:text-teal-500' href='http://wednesdaygallo.com/todo/'>Demo</a>
+                  <a className='hover:text-teal-500' href='https://github.com/wednesdaygallo/todo-app'>Github</a>
                 </div>
               </figure>
               <figure className='mb-10'>
                 <h3 className='text-2xl text-center'>Clone Site</h3>
                 <figcaption className='text-pink-500 text-center uppercase mb-2 text-xs'>html/css</figcaption>
-                <img src={clone} alt='website screenshot' className='rounded-sm' />
+                <a href='http://wednesdaygallo.com/clone-site/'><img src={clone} alt='website screenshot' className='rounded-sm' /></a>
                 <div className='text-sm flex justify-center gap-5 mt-2'>
-                  <a className='bg-gray-600 px-2 py-0.5 rounded-md hover:bg-teal-600' href='http://wednesdaygallo.com/clone-site/'>Demo</a>
-                  <a className='bg-gray-600 px-2 py-0.5 rounded-md hover:bg-teal-600' href='https://github.com/wednesdaygallo/clone-site'>Github</a>
+                  <a className='hover:text-teal-500' href='http://wednesdaygallo.com/clone-site/'>Demo</a>
+                  <a className='hover:text-teal-500' href='https://github.com/wednesdaygallo/clone-site'>Github</a>
                 </div>
               </figure>
             </div>
